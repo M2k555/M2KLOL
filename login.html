@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าล็อกอิน</title><link rel="stylesheet" href="styles.css">
+    <style>
+        /* กำหนดพื้นหลังและจัดกลางหน้า */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #8fb996, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* กล่องล็อกอิน */
+        .login-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* ชื่อเว็บไซต์หรือข้อความส่วนหัว */
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* สไตล์ของ input fields */
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        /* เมื่อใส่ข้อมูลใน input จะเปลี่ยน border */
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: #2575fc;
+            outline: none;
+        }
+
+        /* ปุ่มล็อกอิน */
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #2575fc;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* เปลี่ยนสีเมื่อเอาเมาส์ไปชี้ที่ปุ่ม */
+        .login-btn:hover {
+            background-color: #1e66d8;
+        }
+
+        /* ลิงค์สำหรับ "ลืมรหัสผ่าน" */
+        .forgot-password {
+            display: block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #2575fc;
+            font-size: 14px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>เข้าสู่ระบบ</h2>
+        
+        <!-- ฟอร์มล็อกอิน -->
+        <form action="#" method="POST">
+            <input type="text" name="username" placeholder="ชื่อผู้ใช้" required>
+            <input type="password" name="password" placeholder="รหัสผ่าน" required>
+            <button type="submit" class="login-btn">เข้าสู่ระบบ</button>
+        </form>
+
+        <!-- ลิงค์ลืมรหัสผ่าน -->
+        <a href="#" class="forgot-password">ลืมรหัสผ่าน?</a>
+    </div>
+
+</body>
+</html>

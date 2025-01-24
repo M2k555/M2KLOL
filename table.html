@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางขายสินค้า</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ตารางขายสินค้า</h1>
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>ลำดับ</th>
+                <th>ชื่อสินค้า</th>
+                <th>ราคา</th>
+                <th>รูปภาพ</th>
+                <th>ราคารวม</th>
+            </tr>
+        </thead>
+        <body>
+            <tr>
+                <td>1</td>
+                <td>สมาร์ทโฟน</td>
+                <td>10,000 บาท</td>
+                <td align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bwE-afFt52-mDlxUK8-VObj83o_Hyu_5Bw&s" alt="x89" width="100 px" height="100 px">
+                <td>20,000 บาท</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>แล็ปท็อป</td>
+                <td>25,000 บาท</td>
+                <td align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bwE-afFt52-mDlxUK8-VObj83o_Hyu_5Bw&s" alt="x89" width="100 px" height="100 px">
+                <td>25,000 บาท</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>หูฟังไร้สาย</td>
+                <td>3,000 บาท</td>
+                <td align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bwE-afFt52-mDlxUK8-VObj83o_Hyu_5Bw&s" alt="x89" width="100 px" height="100 px">
+                <td>9,000 บาท</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>แท็บเล็ต</td>
+                <td>15,000 บาท</td>
+                <td align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bwE-afFt52-mDlxUK8-VObj83o_Hyu_5Bw&s" alt="x89" width="100 px" height="100 px">
+                <td>15,000 บาท</td>
+            </tr>
+        </body>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: right; font-weight: bold;">ยอดรวม</td>
+                <td>69,000 บาท</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
